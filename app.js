@@ -12,6 +12,6 @@ const app = express()
 app.use(logger('dev'))
 app.use(cors())
 app.use(express.json())
-app.use('/api/user', suggestionRouter)
+app.use('/api/suggestions', suggestionRouter)
 
 module.exports = app

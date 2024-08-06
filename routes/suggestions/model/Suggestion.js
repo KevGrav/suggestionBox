@@ -17,13 +17,15 @@ const SuggestionSchema = new mongoose.Schema({
         required: true
     },
     likes:{
-        Number: 0
+        type: Number,
+        default: 0
     },
     anonymous:{
         type: Boolean
     },
     timeCreated:{
-        date: 'Date.now'
+        type: Date,
+        default: Date.now
     }
 })
 
